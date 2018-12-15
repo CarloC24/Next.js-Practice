@@ -112,19 +112,21 @@ var _jsxFileName = "C:\\Users\\leila\\Desktop\\Next.js\\pages\\index.js";
 var Title = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.h1.withConfig({
   displayName: "pages__Title",
   componentId: "sc-1cqmxon-0"
-})(["font-size:4rem;transform:skew(-7deg);"]);
+})(["font-size:4rem;transform:skew(-7deg);color:", ";"], function (props) {
+  return props.theme.red;
+});
 
 var Index = function Index() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 9
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Title, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 10
     },
     __self: this
   }, "Welcome to BitzPrice"));

@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 const Abouth1 = styled.h1`
   font-size: 60px;
+  color: ${props => props.theme.grey};
 `;
 
 const About = () => {
