@@ -3,6 +3,11 @@ import Router from 'next/router';
 import Head from './Head';
 import Navbar from './NavBar';
 import Page from './Page';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import reducer from '../reducers';
+
+const store = createStore(reducer);
 
 class MyApp extends App {
   static async getInitialProps({ Component, ctx }) {
@@ -20,11 +25,13 @@ class MyApp extends App {
 
     return (
       <Container>
-        <Head />
-        <Navbar />
-        <Page>
-          <Component {...pageProps} />
-        </Page>
+        <Provider store={store}>
+          <Head />
+          <Navbar />
+          <Page>
+            <Component {...pageProps} />
+          </Page>
+        </Provider>
       </Container>
     );
   }
