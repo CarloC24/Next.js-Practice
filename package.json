@@ -1,0 +1,27 @@
+{
+  "name": "Next.js",
+  "version": "1.0.0",
+  "description": "Next js practice with traversy media",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "start": "next start",
+    "build": "next build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarloC24/Next.js-Practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CarloC24/Next.js-Practice/issues"
+  },
+  "homepage": "https://github.com/CarloC24/Next.js-Practice#readme",
+  "dependencies": {
+    "next": "^7.0.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  }
+}
