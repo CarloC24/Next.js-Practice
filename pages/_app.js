@@ -14,7 +14,7 @@ const theme = {
   bs: '0 12px 24px 0 rgba(0,0,0,0.09)'
 };
 
-class myApp extends App {
+class MyApp extends App {
   static async getInitialProps({ Component, ctx }) {
     let pageProps = {};
     if (Component.getInitialProps) {
@@ -30,11 +30,9 @@ class myApp extends App {
 
     return (
       <Container>
-        <ThemeProvider theme={theme}>
-          <Head />
-          <Navbar />
-          <Component {...pageProps} />
-        </ThemeProvider>
+        <Head />
+        <Navbar />
+        <Component {...pageProps} />
       </Container>
     );
   }
